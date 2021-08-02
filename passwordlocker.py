@@ -11,10 +11,10 @@ class User:
         self.password = password
         self.username = username
 
-    # def save_userdetails(self):
+    def save_userdetails(self):
 
-    #     '''
-    #     save_contact method saves user's  into user_details
-    #     '''
+        '''
+        save_userdetails method saves user's  into user_details
+        '''
 
-    #     User.user_details.append(self)
+        User.user_details.append(self)
