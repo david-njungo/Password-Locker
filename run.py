@@ -37,8 +37,17 @@ def main():
                                 print("Enter password")
                                 password=input(">")     
                                 save_details(create_account(first_name,last_name,username,password))        
-                                print(f"{username} you have successfully created an account proceed to login")     
-
+                                print(f"{username} you have successfully created an account proceed to login") 
+                elif short_code == "la" :
+                                print("Enter username") 
+                                userName=input(">") 
+                                print ("Enter password") 
+                                passWord=input(">")
+                                if username == userName and passWord == password:
+                                        pass
+                                else:
+                                        print("invalid username or password")
+                                        return "la"
 
 if __name__ == '__main__':
 
