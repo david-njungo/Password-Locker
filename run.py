@@ -44,11 +44,45 @@ def main():
                                 print ("Enter password") 
                                 passWord=input(">")
                                 if username == userName and passWord == password:
-                                        pass
+                                        print("Choose one of the following actions:")
+                                        print("Use the following short_codes: cnc -create new credentials, sec -save existing credentials,dis -display all credentials ,ex-exit")
+                                        short_code=input().lower()
+                                        if short_code == "cnc" :
+                                                print("Enter application name")
+                                                app_name = input(">")
+                                                print("Enter application user name") 
+                                                app_username = input(">")
+                                                print ("Enter yes or no if you want the app to generate password for you?") 
+                                                yes_no = input(">").lower()
+                                                if yes_no == "yes" :
+                                                        app_password == password
+                                                else yes_no == "no":
+                                                        print("Enter the application password of your choice")
+                                                        app_password = input(">") 
+                                                print(f"Successfully created a passord {app_password} for your {app_name} ")
+                                        elif short_code == "sec":
+                                                print("Enter application name")
+                                                app_name = input(">")
+                                                print("Enter application user name") 
+                                                app_username = input(">")
+                                                print("Enter password")
+                                                app_password == input(">")
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
                                 else:
                                         print("invalid username or password")
                                         return "la"
-
+                              
 if __name__ == '__main__':
 
     main()
