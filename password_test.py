@@ -74,6 +74,8 @@ class TestCredential (unittest.TestCase):
         self.new_credentials.delete_credentialacc()
         self.assertEqual(len(Credential.credentials),1)
 
+    def test_display_all_credentialaccs(self):
+        self.assertEqual(Credential.display_credentialaccs(),Credential.credentials)
 
 if __name__ == '__main__':
     unittest.main()

@@ -40,3 +40,7 @@ class Credential:
 
     def delete_credentialacc(self):
         Credential.credentials.remove(self)
+    
+    @classmethod
+    def display_credentialaccs(cls):
+        return cls.credentials
