@@ -61,11 +61,18 @@ class TestCredential (unittest.TestCase):
         self.assertEqual(len(Credential.credentials),2)
     
     def tearDown(self):
-            '''
-            tearDown method that does clean up after each test case has run.
-            '''
-            Credential.credentials = []
+        '''
+        tearDown method that does clean up after each test case has run.
+        '''
+        Credential.credentials = []
+    def test_delete_credentialacc(self):
+        
+        self.new_credentials.save_credentials()
+        test_save_credentials = Credential(" "," "," ")
+        test_save_credentials.save_credentials()
 
+        self.new_credentials.delete_credentialacc()
+        self.assertEqual(len(Credential.credentials),1)
 
 
 if __name__ == '__main__':

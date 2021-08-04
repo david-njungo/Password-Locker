@@ -38,3 +38,5 @@ class Credential:
 
         Credential.credentials.append(self)
 
+    def delete_credentialacc(self):
+        Credential.credentials.remove(self)
