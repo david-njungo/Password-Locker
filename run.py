@@ -1,5 +1,7 @@
 #!/usr/bin/env python3.8
 from passwordlocker import User
+from passwordlocker import Credential
+
 def create_account(firstname,lastname,username,password):
         '''
         Function to create a new User
@@ -12,7 +14,22 @@ def save_details(user):
         Function to save userdetails
         '''
         user.save_userdetails()
-
+def create_credentialacc(app_name,app_username,app_password)):
+    '''
+    Function to create a new credential account
+    '''
+    new_credentials = Credential(app_name,app_username,app_password))
+    return new_credentials
+def save_credentialacc(user):
+        '''
+        Function to save credentialacc
+        '''
+        credential.save_credentials()
+def delete_credentialacc(credentials):
+    '''
+    Function to delete a credential account
+    '''
+    credentials.delete_credentialacc()     
 
 def main():
         print("*"*80)
