@@ -19,3 +19,8 @@ $ git clone https://github.com/david-njungo/Password-Locker.git
 To make the program now executable we go to the terminal and enter this commands:
 * chmod +x run.py 
 * ./run.py
+## Known Bugs
+No known bugs yet.
+## Technologies Used
+Languages used are purely;
+* PYTHON
